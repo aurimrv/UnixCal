@@ -7,7 +7,7 @@ Scripts below uses ProteumIM testing tool which requires to set a environment va
 On Linux based on Debian distributions, install the following packages before running Proteum/IM.
 
 ```
-sudo apt-get -y install tcsh csh tcl tk
+sudo apt-get -y install tcsh csh tcl tk xterm
 ```
 
 ### Configure ProteumIM - Mutation Testing tool for C
@@ -66,14 +66,13 @@ chmod a+x *.sh
 19 and 33 - equivalent
 72 - non-equivalent 
 
-
 ### Discard equivalent mutants
 
 ```
 ./04-check-equivalents.sh $PWD files.txt
 ```
 
-## Evaluate mutation score of adequate test set for mutation testing `testset-mt.txt`
+### Evaluate mutation score of adequate test set for mutation testing `testset-mt.txt`
 
 ```
 ./02-import-tests.sh $PWD files.txt testset-mt.txt
